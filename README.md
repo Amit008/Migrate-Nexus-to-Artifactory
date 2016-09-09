@@ -1,7 +1,7 @@
-# Migrate-Nexus-to-Artifactory
-#Step#
-#1. Script can be configured to download all or specific Repository
-#2. Loop thorugh Folder structure locally on machine and upload downloaded Artifacts in Artifactory
+Migrate-Nexus-to-Artifactory
+Step
+1. Script can be configured to download all or specific Repository <br>
+2. Loop thorugh Folder structure locally on machine and upload downloaded Artifacts in Artifactory<br>
 <br>
 <br>
 <br>
