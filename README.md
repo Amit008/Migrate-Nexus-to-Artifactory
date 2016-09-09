@@ -11,6 +11,5 @@ for file in `find /<RepositporyName>/* -type f` ; do  <br>
 parentname="$(basename "$(dirname "$file")")"    <br>
 ###This will print the file which is going to be uploaded in nexus###<br>
 echo "$parentname/$(basename "$file")";  <br>
-curl -v -X PUT --user admin:password  --upload-file <PATH>/<RepositoryName>/$parentname/$(basename "$file")"; <br>
-http://<Ipaddress>:<portNo>/artifactory/sample/$parentname/$(basename "$file")";  <br>
+curl -v -X PUT --user admin:password  --upload-file <PATH>/<RepositoryName>/$parentname/$(basename "$file")" http://<Ipaddress>:<portNo>/artifactory/sample/$parentname/$(basename "$file")";  <br>
 done
