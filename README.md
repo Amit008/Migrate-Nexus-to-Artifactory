@@ -1,5 +1,5 @@
 Migrate-Nexus-to-Artifactory <br>
-Step <br>
+Steps of Migration: <br>
 1. Script can be configured to download all or specific Repository <br>
 2. Loop thorugh Folder structure locally on machine and upload downloaded Artifacts in Artifactory<br>
 <br>
