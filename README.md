@@ -13,3 +13,4 @@ parentname="$(basename "$(dirname "$file")")"    <br>
 echo "$parentname/$(basename "$file")";  <br>
 curl -v -X PUT --user admin:password  --upload-file <PATH>/<RepositoryName>/$parentname/$(basename "$file")" http://<Ipaddress>:<portNo>/artifactory/sample/$parentname/$(basename "$file")";  <br>
 done
+
