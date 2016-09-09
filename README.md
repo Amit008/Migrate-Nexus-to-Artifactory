@@ -6,10 +6,10 @@ Steps of Migration: <br>
 <br>
 <br>
 
-wget -r -np -nH –cut-dirs=3 -R index.html -R *sha1,*md5,*xml,*pom  -l0 http://192.168.1.101:32769/nexus/content/repositories/
+wget -r -np -nH –cut-dirs=3 -R index.html -R *sha1,*md5,*xml,*pom  -l0 http://<IPAddress>:<portNo>/nexus/content/repositories/ <br>
 for file in `find /<RepositporyName>/* -type f` ; do
 parentname="$(basename "$(dirname "$file")")"
-###This will print the file which is going to be uploaded in nexus###
+###This will print the file which is going to be uploaded in nexus###<br>
 echo "$parentname/$(basename "$file")"; 
 curl -v -X PUT --user admin:password  --upload-file <PATH>/<RepositoryName>/$parentname/$(basename "$file")";
 http://<Ipaddress>:<portNo>/artifactory/sample/$parentname/$(basename "$file")"; 
